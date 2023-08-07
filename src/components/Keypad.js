@@ -1,11 +1,17 @@
 // Code Keypad Component Here
 
 function Keypad (){
+    function handleInput(){
+        console.log("Entering password...")
+
+    }
+
+
     return (
         <form>
-            <input type="password" onChange={console.log("Entering password...")}>
+            <input type="password" onChange={handleInput}/>
             
-            </input>
+        
 
 
         </form>
@@ -14,4 +20,4 @@ function Keypad (){
     )
 }
 
-export default Keypad;
+export default Keypad
